@@ -1,6 +1,12 @@
 ## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Smart Delivery Route Optimization and Load Balancing System
+This project aims to optimize the delivery system of a logistics company. The
+project will first compute the shortest delivery routes using Dijkstra’s
+algorithm. The load balancing among vehicles will be handled using the
+Knapsack algorithm to maximize efficiency. For connecting the main
+warehouses, Kruskal’s or Prim’s algorithm will be used to minimize the cost of
+transportation between them. The system will also have a dashboard to
+visualize the optimal delivery routes and loads.
 
 ## Folder Structure
 
