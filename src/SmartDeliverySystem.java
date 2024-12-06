@@ -127,15 +127,19 @@ public class SmartDeliverySystem {
                 String end = scanner.nextLine();
 
                 graph.printAllRoutes(start, end);
-            } else if (choice == 3) {
+            } 
+            else if (choice == 3) {
                 int capacity = 50;
                 int[] weights = { 20, 10, 15, 25, 30 };
                 int[] values = { 60, 40, 50, 70, 80 };
                 int n = weights.length;
                 System.out.println("Lenght: " + n);
-                int maxEfficiency = Knapsack.knapsack(capacity, weights, values, n);
-                System.out.println("Maximum efficiency (value) that can be obtained: " + maxEfficiency);
-            } else if (choice == 4) {
+                int maxEfficiency = Knapsack.knapsack
+                (capacity, weights, values, n);
+                System.out.println("Maximum efficiency: " 
+                + maxEfficiency);
+            } 
+            else if (choice == 4) {
                 List<Kruskal.Edge> edges = graph.getAllEdges();
                 Kruskal.kruskal(cities.size(), edges);
             } else if (choice == 5) {
